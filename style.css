@@ -1,0 +1,593 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button,
+  input,
+  textarea {
+    outline: none;
+    border-style: solid;
+    background-color: transparent;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    max-width: 1155px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header {
+    background-image: url(img/background.png);
+    padding-bottom: 363px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header .link {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  
+  header .links {
+    display: flex;
+  }
+  
+  header .link_lang {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  header .link_strip {
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+  header .link_lang:hover {
+    font-weight: bold;
+  }
+  
+  header .links_lang {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  header .time {
+    margin-right: 50px;
+  }
+  
+  header .nav {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .container .head {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo_text {
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 13px;
+  }
+  
+  header .menu {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    justify-content: space-between;
+  }
+  
+  header .btc {
+    border: 1px solid #fff;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 61px;
+    margin-right: 57px;
+    cursor: pointer;
+    padding: 9px 17px 10px 17px; 
+  }
+  
+  @media (max-width: 1200px) {
+    header .btc {
+      margin-left: 36px;
+      margin-right: 36px;
+    }
+  }
+  
+  @media (max-width: 1155px) {
+    header .menu_menu {
+      display: none;
+    }
+    header .currency .links .link:not(:first-child) {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header .language .links_lang .link_lang:not(:first-child) {
+      display: none;
+    }
+    .header .language .link_strip {
+      display: none;
+    }
+  }
+  
+  header .bitcoin {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 11px;;
+  }
+  
+  header .icon_b {
+    width: 16px;
+    height: 16px;
+  }
+  
+  header .polygon {
+    width: 5px;
+  }
+  
+  header .menu_links {
+    display: flex;
+  }
+  
+  header .menu_link {
+    margin-right: 38px;
+    color: #ffffff;
+    opacity: 0.6;
+    font-size: 14px;
+    cursor: pointer;
+    padding-bottom: 7px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  header .menu_link:hover {
+    opacity: 100%;
+    border-bottom: 2px solid #ffffff;
+  }
+  
+  header .user {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    padding: 11px 20px 12px 20px;
+  }
+  
+  header .icon_user {
+    height: 12px;
+  }
+  
+  .header .account {
+    color: #2a1c75;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 15px;
+  }
+  
+  .header .polygon2 {
+    width: 5px;
+  }
+  
+  header .CTA_text,
+  .benefit_text {
+    color: #ffffff;
+    font-size: 28px;
+  }
+  
+  header .CTA {
+    margin-bottom: 25px;
+  }
+  
+  .header .benefit_text {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+  
+  header .btn {
+    background-color: #ffffff;
+    border-radius: 21px;
+    color: #2a1c75;
+    width: 223px;
+    padding: 12px 0;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .lending .text {
+    width: 50%;
+  }
+  
+  .lending .lending_text {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+  }
+  
+  .header .notebook {
+    align-items: center;
+    max-width: 628px;
+    width: 50%;
+  }
+  
+  .header .img_laptop {
+    width: 100%;
+  }
+  
+  .lending .lending_text .text {
+    max-width: 628px;
+    margin-right: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .lending .notebook {
+      display: none;
+    }
+    .lending .lending_text .text {
+      max-width: 100%;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  
+  .cards .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -107px;
+  }
+  
+  .cards .card {
+    border-radius: 5px;
+    box-shadow: 0px 0px 35px #d5d5e3;
+    padding: 29px 35px 36px 35px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1200px) {
+    .cards .container {
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .cards .card {
+      width: 45%;
+    }
+  
+    .cards .container {
+      gap: 58px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cards .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .cards .card {
+      width: 30%;
+    }
+  
+    .cards .container {
+      row-gap: 20px;
+    }
+  }
+  
+  .cards .card:not(:last-child) {
+    margin-right: 58px;
+  }
+  
+  .cards .img_bitcoin {
+    width: 30px;
+    margin-right: 12px;
+  }
+  
+  .cards .caption {
+    color: #333333;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .cards .logo_card {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  
+  .cards .text_word {
+    font-size: 14px;
+    color: #4f4f4f;
+    margin-bottom: 2px;
+  }
+  
+  .cards .text_num {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 13px;
+  }
+  
+  .cards .information {
+    display: flex;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  .cards .arrow {
+    margin-left: 6px;
+  }
+  
+  .cards .text_information {
+    color: #2f80ed;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .cards .button_start,
+  .button_review {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cards .button_start {
+    background: linear-gradient(58.78deg, #2a1c75 -599.37%, #5639b7 81.13%);
+    color: #ffffff;
+    border: none;
+    margin-bottom: 11px;
+  }
+  
+  .cards .button_review {
+    color: #5639b7;
+    border-color: #5639b7;
+  }
+  
+  .cards .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 27px;
+  }
+  
+  .cards .content .text_group.full-width {
+    grid-column: 1 / span 2;
+  }
+  
+  .news .topic {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    border-bottom: 2px solid #ccd4dc;
+    padding-bottom: 22px;
+    margin-top: 83px;
+  }
+  
+  .news .line {
+    margin: -1px;
+  }
+  
+  .news .news_line {
+    width: 346px;
+    background-color: #5639b7;
+    size: 5px;
+  }
+  
+  .cards_news {
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card_new {
+    box-shadow: 0px 0px 35px #d5d5e3;
+    border-radius: 5px;
+    padding: 23px 24px 17px 19px;
+    width: 346px;
+    height: 324px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cards_news .adt {
+    font-size: 14px;
+    color: #449ed1;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .cards_news .adt_news {
+    color: #eb5757;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .cards_news .adt_stock {
+    color: #e8b92a;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .cards_news .caption_new {
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 28px;
+  }
+  
+  .cards_news .text_new {
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .cards_news .new_date {
+    font-size: 14px;
+    color: #afafaf;
+  }
+  
+  .cards_news .text_date {
+    position: absolute;
+    bottom: 17px;
+  }
+  
+  .tweets .button_read {
+    width: 107px;
+    height: 42px;
+    color: #5639b7;
+    border-color: #5639b7;
+    border-radius: 21px;
+    cursor: pointer;
+  }
+  
+  .tweets .topic {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .tweets .line {
+    margin: -1px;
+  }
+  
+  .tweets .news_line {
+    width: 346px;
+    background-color: #5639b7;
+    size: 5px;
+  }
+  
+  .tweets .topic_tweets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccd4dc;
+    padding-bottom: 22px;
+    margin-top: 81px;
+  }
+  
+  .tweets .cards_tweets {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tweets .card_tweet {
+    width: 346px;
+    margin-top: 31px;
+    cursor: pointer;
+  }
+  
+  .tweets .tweet_line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .tweets .tweet_name {
+    color: #2f80ed;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .tweets .tweet_date {
+    color: #afafaf;
+    font-size: 14px;
+  }
+  
+  .tweets .tweet_text {
+    color: #333333;
+    font-size: 14px;
+  }
+  
+  .tweets .hashtag {
+    font-size: 14px;
+    color: #2f80ed;
+  }
+  
+  footer {
+    background: #ffffff;
+  }
+  
+  footer .btc {
+    border: 1px solid #CCD4DC;
+    display: flex;
+    width: 105px;
+    height: 35px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  footer .menu_links {
+    display: flex;
+  }
+  
+  footer .menu_link {
+    color: #333333;
+    margin-right: 39px;
+    font-weight: bold;
+    opacity: 60%;
+    cursor: pointer;
+  }
+  
+  footer .menu_link:hover {
+    opacity: 100%;
+  }
+  
+  footer .lower_menu {
+    border-bottom: 1px solid #CCD4DC;
+    padding-bottom: 32px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .rights {
+    color: #333333;
+    opacity: 60%;
+    font-size: 14px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+  }
